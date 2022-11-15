@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] numbers = {1, 3, 8, 4, 2, 5, 6, 11, 13, 7, 8,9,10,11,12,13,14};
+        int[] numbers = {1, 3, 8, 4, 2, 5, 6, 11, 13, 7, 8, 9, 10, 11, 12, 13, 14, 2, 5};
 
         int counter = 0;
         int result = 0;
@@ -15,10 +15,13 @@ public class Main {
             } else {
                 if (counter > result) {
                     result = counter + 1;
-
                 }
                 counter = 0;
             }
+        }
+
+        if (counter > result) {
+            result = counter + 1;
         }
 
         System.out.println("Najdłużsyz podciąg wynosi: " + result);
