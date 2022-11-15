@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("(^|\\s)a+\\spsik($|\\s)");
-        String myString = "sdfsdfsdf aaaaaaaaaaa psik asjkhcahdasjkdhas";
+        String myString = "aaaaaaaaaaa psik";
 
         boolean result = pattern.matcher(myString).find();
         if (result) {
