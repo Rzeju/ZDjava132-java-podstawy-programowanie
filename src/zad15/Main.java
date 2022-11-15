@@ -16,7 +16,6 @@ public class Main {
             if (visited[i] == true) {
                 continue;
             }
-
             int counter = 1;
             for (int j = i + 1; j < size; j++) {
                 if (numbers[i] == numbers[j]) {
@@ -24,12 +23,9 @@ public class Main {
                     counter++;
                 }
             }
-
             if (counter > 1) {
                 System.out.println("Liczba która się powtórzyła to conajmniej 2 razy to: " + numbers[i]);
             }
-
-
         }
 
         ///BONUS
