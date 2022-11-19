@@ -23,14 +23,25 @@ public class Bonus {
                 "Anderson"
         );
 
-
+        //Tutaj zachęcam do poczytania o ->
+        //MAPY
+        //LISTY
+        //STREAMY
+        //opis tych zagadnień jest zbyt obszerny abym zostawił go tutaj
         Map<Integer, List<String>> map = names
                 .stream()
                 .collect(Collectors.groupingBy(String::length));
 
         System.out.println("Length and its List of Strings :-");
+        //Tutaj użyłem
+        //EntrySet -> zagadnienie z MAP
+        //referencja do metody (System.out::println)
         map.entrySet().forEach(System.out::println);
 
+        //Totaj ponownie streamy
+        //Intermediate Operations
+        //Terminal Operations
+        //Użyte są również obiekty Optional
         List<String> longestStrings = map
                 .entrySet()
                 .stream()
